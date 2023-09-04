@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Nawat Ngerncham</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#about">Nawat Ngerncham</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+                <li class="nav-item"><a class="nav-link" href="#others">Others</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="container">
+        <a class="anchor" id="about"></a>
+        <div class="row">
+            <div class="col-9">
+                <h2>About me</h2>
+                <p>
+                    Hi! My name is Nawat Ngerncham. I am a 4th-year undergraduate student at Mahidol University
+                    International College with a major in Computer Science and a minor in Applied Mathematics.
+                </p>
+                <p>
+                    I am interested in graph algorithms, parallel algorithms, and the concept of randomness in
+                    mathematics. I am also working on a senior project (i.e. research) on approximate nearest
+                    neighbor search in the streaming/sliding-window setting. Apart from this, please check <span><a
+                        href="#projects">Projects</a></span> for other/past projects I've worked on.
+                </p>
+            </div>
+            <div class="col-3">
+                <img class="profile" src="images/nawat.png" alt="Nawat waving">
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <a class="anchor" id="projects"></a>
+        <div class="row">
+            <div class="col-12">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <h4>Science Podcast by Science Society Club MUIC</h4>
+                        <h6>2021 - present</h6>
+                        <p>
+                            I have produced podcasts with the aim of de-stigmatizing science for people who do not study
+                            science. Each episode is roughly 15-25 minutes long and covers a topic in science. Here is
+                            an example episode that I have worked on:
+                        </p>
+                        <iframe width="560" height="315"
+                                src="https://www.youtube-nocookie.com/embed/8E9sEDf7nnw?si=ndZZ2U6oqNGY68Bx"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        <p>
+                            The full playlist of podcasts can be found <span><a
+                                href="https://youtube.com/playlist?list=PLybE_8ipJXOXsb5H8MYQHt_vvoEvGp0u8&si=HlwxX3ZoZyfBvbmu">here</a></span>.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Jaundice Assistant</h4>
+                        <h6>2022 - present</h6>
+                        <p>
+                            Internal tool for Siriraj Hospital's NICU to assist in the management of neonatal
+                            hyperbilirubinemia in infants with at least 35 weeks of gestational age.
+                        </p>
+                        <p>
+                            The GitHub organization where the back-end and front-end code are store can be found
+                            <span><a href="https://github.com/sirirajnicu">here</a></span>.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>EigenSeeker: a Home-baked Eigenvalue/vector Finder</h4>
+                        <h6>2021</h6>
+                        <p>
+                            A program to numerically find the eigenvalue and eigenvector of a given matrix using the
+                            power method, the shifted inverse power method, and the Gershgorin circle theorem.
+                        </p>
+                        <p>
+                            The GitHub repository can be found <span><a
+                                href="https://github.com/nngerncham/eigen-seeker">here</a></span>.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>NumPar: A NumPy Clone with Parallelism Baked In</h4>
+                        <h6>2022</h6>
+                        <p>
+                            A Python library for numerical computation based on the library NumPy, specifically its
+                            linear algebra module (numpy.linalg). The library is implemented is Rust, using Rayon for
+                            parallelism and PyO3 for binding Rust to Python.
+                        </p>
+                        <p>
+                            The GitHub repository can be found <span><a
+                                href="https://github.com/nngerncham/numpar">here</a></span>.
+                        </p>
+                    </li>
+                    <li>
+                        <b>Using Non-homogenous Markov Chain to calculate when we die</b>
+                        <h6>2023</h6>
+                        <p>
+                            An investigation on how we non-homogenous Markov Chains can be used to model life and death.
+                        </p>
+                        <p>
+                            The GitHub repository can be found <span><a
+                                href="https://github.com/nngerncham/non-homog-insurance">here</a></span>.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <a class="anchor" id="experiences"></a>
+        <div class="row">
+            <div class="col-12">
+                <h2>Experiences</h2>
+                <ul>
+                    <li>
+                        <h4>Automated Software Tester</h4>
+                        <h6>The Gang Technology Co., Ltd. | 2022 - 2023</h6>
+                        <p>
+                            Developed automated tests for web applications using Playwright JS.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Private Tutor</h4>
+                        <h6>2023</h6>
+                        <p>
+                            Tutored a undergraduate student on Data Structures and Algorithms and C programming.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Full-stack Developer</h4>
+                        <h6>Faculty of Medicine Siriraj Hospital, Mahidol University | 2022 - present</h6>
+                        <p>
+                            Working on internal tools for the Neonatology Unit, Division of Pediatrics, Siriraj
+                            Hospital.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Undergraduate Teaching Assistant</h4>
+                        <h6>Mahidol University International College | 2021 - present</h6>
+                        <p>
+                            Helped students and graded assignments of many computer science courses including (but not
+                            limited to):
+                        </p>
+                        <ul>
+                            <li><b>ICCS208</b> Data Structures and Abstractions</li>
+                            <li><b>ICCS311</b> Functional and Parallel Programming</li>
+                            <li><b>ICCS312</b> Algorithms and Tractability</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <a class="anchor" id="others"></a>
+        <div class="row">
+            <div class="col-12">
+                <h2>Others</h2>
+                <p>
+                    In my free time, I enjoy playing video games, exercising, and cooking. I also very occasionally
+                    read. In my even free-er time, I enjoy taking photos and traveling to historically significant
+                    locations. I also love cats very much. (Unfortunately, I do not have a cat.)
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
