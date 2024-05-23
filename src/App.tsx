@@ -1,33 +1,75 @@
 import React, { useState } from "react";
-import {
-  AppstoreOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  ShopOutlined,
-  TeamOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
-import type { MenuProps } from "antd";
 import { Layout, Menu, theme } from "antd";
+import {
+  AuditOutlined,
+  BookOutlined,
+  CameraOutlined,
+  CoffeeOutlined,
+  DatabaseOutlined,
+  HomeOutlined,
+  LaptopOutlined,
+  PlayCircleOutlined,
+  UserOutlined,
+} from "@ant-design/icons";
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const items: MenuProps["items"] = [
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  AppstoreOutlined,
-  TeamOutlined,
-  ShopOutlined,
-].map((icon, index) => ({
-  key: String(index + 1),
-  icon: React.createElement(icon),
-  label: `nav ${index + 1}`,
-}));
+interface MenuItem {
+  key: string;
+  label: string;
+  icon?: React.ReactNode;
+  children?: MenuItem[];
+}
+
+const items: MenuItem[] = [
+  {
+    key: "home",
+    label: "Home",
+    icon: <HomeOutlined />,
+  },
+  {
+    key: "about",
+    label: "About",
+    icon: <UserOutlined />,
+  },
+  {
+    key: "experience",
+    label: "Experiences",
+    icon: <AuditOutlined />,
+  },
+  {
+    key: "projects",
+    label: "Personal Projects",
+    icon: <DatabaseOutlined />,
+  },
+  {
+    key: "blogs",
+    label: "Blogs",
+    icon: <BookOutlined />,
+    children: [
+      {
+        key: "eating",
+        label: "Eating",
+        icon: <CoffeeOutlined />,
+      },
+      {
+        key: "career",
+        label: "Tech",
+        icon: <LaptopOutlined />,
+      },
+      {
+        key: "travel",
+        label: "Travel",
+        icon: <CameraOutlined />,
+      },
+      {
+        key: "entertainment",
+        label: "Entertainment",
+        icon: <PlayCircleOutlined />,
+      },
+    ],
+  },
+];
 
 const App: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -42,6 +84,7 @@ const App: React.FC = () => {
         collapsible
         collapsed={collapsed}
         onCollapse={(value) => setCollapsed(value)}
+        width={256}
         style={{
           overflow: "auto",
           height: "100vh",
@@ -51,7 +94,6 @@ const App: React.FC = () => {
           bottom: 0,
         }}
       >
-        <div className="demo-logo-vertical" />
         <Menu
           theme="dark"
           mode="inline"
@@ -59,7 +101,7 @@ const App: React.FC = () => {
           items={items}
         />
       </Sider>
-      <Layout style={{ marginLeft: 200 }}>
+      <Layout style={{ marginLeft: 256 }}>
         {/*<Header style={{ padding: 0, background: colorBgContainer }} />*/}
         <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
           <div
