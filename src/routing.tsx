@@ -14,6 +14,7 @@ import {
 } from "@ant-design/icons";
 import React from "react";
 import { ItemType } from "antd/es/menu/interface";
+import ToBeImplemented from "./components/ToBeImplemented";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "*",
+    element: <ToBeImplemented />,
   },
 ]);
 
