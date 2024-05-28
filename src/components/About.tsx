@@ -27,7 +27,7 @@ const About = () => {
         Currently, I am a full-time Data Engineer at{" "}
         <a href={theGangLink}>The Gang Technology</a>. I occasionally work on
         backend services and APIs for the company as well depending on what
-        needs to be done. Before that, I was a Teacher's Assistant and an
+        needs to be done. Before that, I was a Teaching Assistant and an
         undergraduate student in Computer Science with a minor in Applied
         Mathematics at Mahidol University International College.
       </p>
