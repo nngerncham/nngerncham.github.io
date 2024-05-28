@@ -6,7 +6,6 @@ import { Carousel, Image } from "antd";
 import NawaOne from "../assets/nawaone.jpg";
 import NawaTwo from "../assets/nawatwo.jpg";
 import NawaThree from "../assets/nawathree.jpg";
-import GreekCar from "../assets/greekCar.jpg";
 
 const images = [NawaOne, NawaTwo, NawaThree];
 
