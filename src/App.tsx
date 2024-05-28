@@ -13,7 +13,7 @@ const App: React.FC = () => {
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Sider
-        breakpoint={"sm"}
+        breakpoint={"md"}
         theme={"light"}
         width={256}
         collapsedWidth={80}
