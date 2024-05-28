@@ -16,7 +16,7 @@ const App: React.FC = () => {
         breakpoint={"md"}
         theme={"light"}
         width={256}
-        collapsedWidth={80}
+        collapsedWidth={50}
         style={{
           overflow: "auto",
           height: "100vh",

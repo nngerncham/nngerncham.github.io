@@ -6,16 +6,16 @@ import {
   // BookOutlined,
   // CameraOutlined,
   // CoffeeOutlined,
-  // DatabaseOutlined,
+  DatabaseOutlined,
   HomeOutlined,
   // LaptopOutlined,
   // PlayCircleOutlined,
   UserOutlined,
 } from "@ant-design/icons";
 import React, { ReactNode } from "react";
-// import { ItemType } from "antd/es/menu/interface";
 import ToBeImplemented from "./components/ToBeImplemented";
 import { Experiences } from "./components/Experiences";
+import { Projects } from "./components/Projects";
 
 interface ItemType {
   key: string;
@@ -24,7 +24,13 @@ interface ItemType {
   children?: ItemType[];
 }
 
-const elements = [<Home />, <About />, <Experiences />, <ToBeImplemented />];
+const elements = [
+  <Home />,
+  <About />,
+  <Experiences />,
+  <Projects />,
+  <ToBeImplemented />,
+];
 export const items: ItemType[] = [
   {
     key: "/",
@@ -41,11 +47,11 @@ export const items: ItemType[] = [
     label: "Experiences",
     icon: <AuditOutlined />,
   },
-  // {
-  //   key: "/projects",
-  //   label: "Personal Projects",
-  //   icon: <DatabaseOutlined />,
-  // },
+  {
+    key: "/projects",
+    label: "Personal Projects",
+    icon: <DatabaseOutlined />,
+  },
   // {
   //   key: "/blogs",
   //   label: "Blogs",
