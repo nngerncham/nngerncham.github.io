@@ -20,8 +20,6 @@ const About = () => {
       <h1>About</h1>
       <p>
         Hello again! Let me re-introduce myself. My name is Nawat Ngerncham.
-        Some people also know me as Paan (ป่าน for the Thais out there) but I do
-        prefer the name Nawat.
       </p>
       <p>
         Currently, I am a full-time Data Engineer at{" "}
