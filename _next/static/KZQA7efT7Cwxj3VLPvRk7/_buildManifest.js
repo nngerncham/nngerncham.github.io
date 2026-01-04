@@ -1,27 +1,22 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "static/chunks/a74a20df9fcf1a14.js"
+    "static/chunks/54ee8d305b7fb47d.js"
   ],
   "/_error": [
-    "static/chunks/c6bbce2814b703c6.js"
+    "static/chunks/ccbee727e930d592.js"
   ],
   "/about": [
-    "static/chunks/16310750b94c6eb6.js"
+    "static/chunks/2afd3d829b8dbf2a.js"
   ],
   "/experiences": [
-    "static/chunks/3b8c7e6f4392d4da.js"
+    "static/chunks/5f96a49c44d003da.js"
   ],
   "/personal-projects": [
-    "static/chunks/de9c74f7c8cc6727.js"
+    "static/chunks/2583f965d8db082c.js"
   ],
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [
-      {
-        "source": "/nngerncham.github.io//_next/:path+",
-        "destination": "/nngerncham.github.io/_next/:path+"
-      }
-    ],
+    "beforeFiles": [],
     "fallback": []
   },
   "sortedPages": [
