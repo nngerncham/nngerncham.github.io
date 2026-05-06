@@ -1,0 +1,141 @@
+.text-and-picture {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+@media (max-width: 800px) {
+    .text-and-picture {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.text-and-picture img, .text-and-picture .next-image, .text-and-picture .next-image img {
+    max-width: 80vw;
+    max-height: 80vh;
+    height: auto;
+}
+
+.carousel-image {
+    width: 100%;
+    max-width: 30vw;
+    height: 300px; /* or any fixed height */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.about-images-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.about-image-item {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-image-item .ant-image {
+    width: 100% !important;
+}
+
+.about-image-item .ant-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (orientation: portrait) {
+    .about-images-row {
+        flex-direction: column;
+    }
+
+    .about-image-item {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 64px;
+    background: #b8b8b8;
+    border-bottom: none;
+    z-index: 100;
+}
+
+.navbar-left h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ant-menu-item a,
+.ant-menu-item span {
+    font-size: 1.2em;
+}
+
+.navbar-left {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+.navbar-landscape-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-portrait-menu {
+    display: none;
+}
+
+.navbar-hamburger {
+    font-size: 1.5em !important;
+    color: inherit !important;
+}
+
+@media (orientation: portrait) {
+    .navbar-landscape-menu {
+        display: none;
+    }
+
+    .navbar-portrait-menu {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.ant-menu-horizontal {
+    border-bottom: none !important;
+    line-height: 64px !important;
+    background: transparent !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-horizontal > .ant-menu-submenu {
+    height: 64px;
+    line-height: 64px;
+}
+
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+    display: none !important;
+}
+
