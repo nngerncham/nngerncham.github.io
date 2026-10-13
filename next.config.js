@@ -1,8 +1,4 @@
-const nextConfig = {
+module.exports = {
   output: "export",
   reactStrictMode: true,
-  basePath: "",
-  assetPrefix: "/public",
 };
-
-module.exports = nextConfig;
